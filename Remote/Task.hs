@@ -14,6 +14,7 @@ module Remote.Task (
                    -- * MapReduce
                    MapReduce(..),
                    mapReduce,
+                   liftTaskIO,
 
                    -- * Useful auxilliaries
                    chunkify,
