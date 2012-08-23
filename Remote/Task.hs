@@ -271,6 +271,7 @@ instance Binary Locality where
                3 -> do r <- get
                        return $ LcByNode r
 
+-- | Default locality: all nodes with name of "WORKER" or "NODE".
 defaultLocality :: Locality
 defaultLocality = LcByRole ["WORKER","NODE"]
 
